@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picnic Plan Voting Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Picnic Destination</h1>
+        <div class="options">
+            <button onclick="vote('Naran')">Naran</button>
+            <button onclick="vote('Kaghan')">Kaghan</button>
+            <button onclick="vote('Skardu')">Skardu</button>
+            <button onclick="vote('Kashmir')">Kashmir</button>
+        </div>
+        <h2>Current Votes:</h2>
+        <ul id="vote-count">
+            <li>Naran: <span id="naran-votes">0</span></li>
+            <li>Kaghan: <span id="kaghan-votes">0</span></li>
+            <li>Skardu: <span id="skardu-votes">0</span></li>
+            <li>Kashmir: <span id="kashmir-votes">0</span></li>
+        </ul>
+        <button class="result-btn" onclick="showResult()">Show Result</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
